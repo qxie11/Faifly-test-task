@@ -1,0 +1,186 @@
+.footer {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background: url('../images/footer/footer-bg.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    &__content-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__info,
+    &__studio,
+    &__contact {
+        padding-bottom: 25px;
+        width: 100%;
+        max-width: 313px;
+    }
+
+    &__studio,
+    &__contact {
+        padding-top: 5px;
+
+        .chapter {
+            font-weight: 900;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    &__info {
+        padding-right: 20px;
+
+        .logo {
+            @include logo;
+        }
+
+        .text {
+            max-width: 291px;
+            margin-top: 22px;
+            line-height: 26px;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    &__studio {
+
+        padding: 5px 20px 20px 10px;
+
+        .phone,
+        .adress {
+            max-width: 243px;
+            display: block;
+            position: relative;
+            margin-left: 28px;
+            line-height: 26px;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -32px;
+                top: 3px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .adress {
+            margin-top: 30px;
+
+            &:before {
+                background: url('../images/footer/location.png') center center no-repeat;
+            }
+        }
+
+        .phone {
+            margin-top: 13px;
+
+            &:before {
+                background: url('../images/footer/phone.png') center center no-repeat;
+            }
+        }
+    }
+
+    &__contact {
+        padding-left: 25px;
+
+        .send {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+
+            &__input {
+                width: 209px;
+                height: 44px;
+                padding-left: 13px;
+                padding-right: 13px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 300;
+                border: 1px solid rgba(#fff, 0.5);
+                background: transparent;
+                outline: none;
+
+                &::placeholder {
+                    @include placeholder;
+                    color: #fff;
+                    opacity: 0.75;
+                }
+
+
+            }
+
+            &__button {
+                width: 71px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(#fff, 0.5);
+                border: none;
+                cursor: pointer;
+
+                &:active {
+                    background: rgba(#fff, 1);
+                }
+            }
+        }
+
+        .social-media {
+            margin-top: 27px;
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+
+            &__item {
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__nav-wrapper {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+
+        .nav {
+            width: 301px;
+            display: flex;
+            justify-content: space-between;
+
+            &__item {
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: 0.4px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+
+        .copyright {
+            margin: 0 0 0 20px;
+            letter-spacing: 0.4px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.header {
+	background: url("../images/header/header-bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	padding-top: 15px;
+	padding-bottom: 70px;
+
+	&__top-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.top-bar__logo {
+			@include logo;
+		}
+
+		.top-bar__nav {
+			display: flex;
+			justify-content: space-between;
+
+			.link:not(:last-child) {
+				margin-right: 26px;
+			}
+
+			.link {
+				font-weight: 600;
+				font-size: 13px;
+				transition: 0.2s;
+
+				&:hover {
+					color: $accent-color;
+				}
+			}
+		}
+	}
+
+	&__slider {
+		margin-top: 137px;
+
+		.dots {
+			margin-top: 125px;
+			width: 55px;
+			display: flex;
+			justify-content: space-between;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.dots > a {
+			display: block;
+			width: 10px;
+			height: 10px;
+			border: 1px solid #fff;
+			background: transparent;
+			border-radius: 50%;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.dots > a.glide__bullet--active {
+			border-color: $accent-color;
+			background: $accent-color;
+		}
+
+		.glide__slides {
+			white-space: inherit;
+		}
+	}
+
+	&__main {
+		.chapter,
+		.text {
+			text-align: center;
+			color: #fff;
+		}
+
+		.chapter {
+			@include text-underline($accent-color, 2px);
+			text-transform: capitalize;
+			font-size: 32px;
+			font-family: $pd-font;
+			font-weight: 600;
+		}
+
+		.text {
+			max-width: 771px;
+			margin: 46px auto 0 auto;
+			line-height: 24px;
+			font-family: $roboto;
+			font-size: 14px;
+			font-weight: 300;
+			letter-spacing: 0.7px;
+		}
+
+		.button {
+			@include button;
+			margin: 46px auto 0 auto;
+		}
+	}
+}

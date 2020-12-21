@@ -1,0 +1,73 @@
+.team {
+	padding-top: 60px;
+	padding-bottom: 70px;
+	background: url('../images/team/team-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+
+	&__chapter {
+		@include chapter;
+	}
+ 
+	&__text {
+		@include text-under-chapter;
+		@include text-underline(rgba(#fff, 0.2), 3px);
+	}
+
+	&__chapter,
+	&__text {
+		color: #fff;
+	}
+
+	&__slider {
+		margin-top: 67px;
+
+		.slide {
+			width: 221px;
+			padding-bottom: 10px;
+			border: 1px solid #fff;
+			
+			&__img {
+				min-height: 229px;
+				background: #fff;
+			}
+
+			&__chapter,
+			&__assignment {
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			&__chapter {
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 26px;
+			}
+
+			&__assignment {
+				margin-top: -14px;
+				font-weight: 300;
+				font-size: 13px;
+				color: #FAFAFA;
+			}
+		}
+	}
+
+	&__bot-text {
+		margin-top: 69px;
+		color: #F3F3F3;
+		font-weight: 200;
+		font-size: 14px;
+		letter-spacing: 0.8px;
+		text-align: center;
+	}
+
+	&__button {
+		@include button;
+		margin-top: 24px;
+		width: 141px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

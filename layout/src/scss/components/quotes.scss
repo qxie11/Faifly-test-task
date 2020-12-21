@@ -1,0 +1,102 @@
+.quotes {
+	padding-top: 66px;
+	padding-bottom: 37px;
+	background: url('../images/quotes/quotes-bg.jpg') center center no-repeat;
+	background-size: cover;
+	color: #fff;
+
+	&__slider1 {
+
+		.item {
+
+			&__quote {
+				margin-top: 0;
+				margin-bottom: 0;
+				line-height: 69px;
+				text-align: center;
+				font-family: $pd-font;
+				font-weight: 400;
+				font-size: 100px;
+			}
+
+			&__text {
+				margin: -4px auto 0;
+				max-width: 770px;
+				font-size: 16px;
+				font-weight: 400;
+				font-family: $pd-font;
+				line-height: 26px;
+				letter-spacing: 0.4px;
+				text-align: center;
+			}
+
+			&__author,
+			&__assignment {
+				text-align: center;
+			}
+
+			&__author {
+				margin-top: 47px;
+				margin-bottom: 0;
+				font-weight: 900;
+				font-size: 14px;
+			}
+
+			&__assignment {
+				margin-top: 8px;
+				font-weight: 300;
+				font-size: 13px;
+			}
+		}
+	}
+
+	&__slider2 {
+		position: relative;
+		width: 296px;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+
+		&-next,
+		&-prev {
+			position: absolute;
+			top: 26px;
+			width: 16px;
+			height: 16px;
+			border-top: 1px solid #fff;
+			border-right: 1px solid #fff;
+			opacity: 0.5;
+			cursor: pointer;
+		}
+
+		&-prev {
+    		left: -44px;
+    		transform: rotate(-135deg);
+		}
+
+		&-next {
+    		right: -46px;
+			transform: rotate(45deg);
+		}
+
+		.glide__slide {
+			min-height: 100px;
+ 
+			.item {
+				margin-top: 10px;
+				width: 45px;
+				height: 45px;
+				transition: 0.2s;
+			}
+
+			&--active {
+				.item {
+					transform: translate(-12px, -10px);
+					width: 70px;
+					height: 70px;
+				}
+
+			}
+		}
+	}
+}

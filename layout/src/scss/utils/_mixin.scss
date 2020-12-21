@@ -1,0 +1,79 @@
+@mixin logo {
+    width: 130px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo__text {
+        font-weight: 100;
+        font-size: 30px;
+        color: $accent-color;
+    }
+}
+
+
+@mixin text-underline($color, $height) {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -21.5px;
+        left: calc(50% - 25px);
+        width: 50px;
+        height: $height;
+        background: $color;
+    }
+}
+
+@mixin button {
+    width: 121px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: $roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $accent-color;
+    transition: 0.2s ease;
+
+    &:hover {
+        background: $accent-color;
+        color: #fff;
+    }
+}
+
+@mixin chapter {
+    font-family: $pd-font;
+    font-weight: 600;
+    color: #413D4B;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+@mixin text-under-chapter {
+    margin: 23px auto 0 auto;
+    max-width: 500px;
+    font-family: $pd-font;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    color: #2F2D35;
+}
+
+@mixin placeholder {
+    color: #413D4B;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.5;
+    text-transform: capitalize;
+}

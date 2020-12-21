@@ -1,0 +1,52 @@
+@import "../utils/vars";
+
+.graph {
+    padding-left: $bar-width;
+    padding-bottom: $bar-width;
+    width: 1920px;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+
+    &__column {
+        min-width: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .elements-bar,
+    .index-bar {
+        position: absolute;
+        right: 0;
+    }
+
+    .elements-bar {
+        top: 0;
+        bottom: 0;
+        left: 17px;
+        display: inline-block;
+
+        .elem-char {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            border-top: 1px solid;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    .index-bar {
+        bottom: 20px;
+        left: $bar-width;
+        display: flex;
+
+        .index-char {
+            width: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

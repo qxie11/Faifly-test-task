@@ -1,0 +1,17 @@
+@import "~normalize.css";
+@import "components/graph";
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

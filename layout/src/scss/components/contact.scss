@@ -1,0 +1,94 @@
+.contact {
+    padding-top: 60px;
+    padding-bottom: 38px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__form {
+        padding-bottom: 30px;
+        width: 100%;
+        max-width: 462px;
+
+
+        .chapter {
+            @include chapter;
+            text-align: left;
+        }
+
+        input {
+            height: 46px;
+        }
+
+        .email,
+        .name,
+        .subject,
+        .text {
+            width: 100%;
+            padding-left: 21px;
+            padding-right: 21px;
+            margin-top: 21px;
+            display: block;
+            border: 1px solid rgba(#000, 0.1);
+            outline: none;
+            color: #413D4B;
+            font-size: 14px;
+            font-weight: 300;
+
+            &::placeholder {
+                @include placeholder;
+            }
+
+            &:focus {
+                border: 1px solid rgba($accent-color, 1);
+            }
+        }
+
+
+
+        .name {
+            margin-top: 44px;
+        }
+
+        .text {
+            padding: 21px;
+            min-height: 200px;
+            resize: none;
+        }
+
+        .submit {
+            @include button;
+            width: 120px;
+            margin-top: 20px;
+        }
+    }
+
+    &__clients {
+        width: 100%;
+        max-width: 399px;
+        padding-left: 20px;
+
+
+        .chapter {
+            @include chapter;
+            text-align: left;
+        }
+
+        .brands {
+            margin-top: 55px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(162px, 1fr));
+
+            .brand-img {
+                margin-bottom: 49px;
+            }
+
+            .brand-img:nth-child(even) {
+                justify-self: end;
+            }
+        }
+    }
+}
