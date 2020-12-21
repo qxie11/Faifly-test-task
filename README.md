@@ -1,5 +1,5 @@
 # Faifly-test-task
-# На написания проекта "bar charts" у меня ушло приблизительно 2.5 часа. Делал подобного толка проекты github.com/qxie11/excel , github.com/qxie11/js-constructor
+# На написание проекта "bar charts" у меня ушло приблизительно 2.5 часа. Делал подобного толка проекты github.com/qxie11/excel , github.com/qxie11/js-constructor
 
 # На верстку у меня ушло приблизительно 9 часов. Решил не использовать Bootstrap, а ограничится CSS Grid. Еще пример моей верстки - https://zealous-volhard-7a48f3.netlify.app
 # Для создания слайдеров использовал библиотеку glide js. Старался верстать один в один с макетом, использую расширение Pixel Perfect. 
